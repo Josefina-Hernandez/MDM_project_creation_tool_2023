@@ -102,7 +102,7 @@ class Automation():
         chrome_options.add_argument("--disable-extensions")  # 禁用扩展
         chrome_options.add_argument("--disable-browser-side-navigation")  # 禁用浏览器侧边导航
         chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # 禁用自动控制特性
-        chrome_options.add_argument("--headless") #Hide chrome browser
+        #chrome_options.add_argument("--headless") #Hide chrome browser
 
         if chromedriver_mode == 1:  #"auto"
             self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),
